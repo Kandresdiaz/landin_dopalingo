@@ -267,141 +267,136 @@
         ¿Cómo unirse a la beta en <span class="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">3 pasos sencillos</span>?
       </h2>
       <p class="text-gray-400 text-sm">
-        Google exige que todos los probadores se unan a un grupo cerrado antes de descargar la aplicación. Sigue este paso a paso para activarlo de inmediato.
-      </p>
-    </div>
-
-    <!-- Steps Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        Google exige que todos los probadores se unan a un grupo cerrado antes de descargar la aplicación. Sigue este paso a paso para activarlo de inme    <!-- Steps Vertical Stack -->
+    <div class="flex flex-col gap-10">
       
-      <!-- Step 1 Card -->
-      <div class="glass p-8 rounded-3xl space-y-5 glass-hover transition-all duration-300 flex flex-col justify-between">
-        <div class="space-y-4">
-          <div class="w-12 h-12 bg-purple-600/10 border border-purple-500/20 text-purple-400 rounded-2xl flex items-center justify-center font-black text-xl">
-            1
-          </div>
-          <h3 class="text-xl font-bold text-white flex items-center gap-2">
-            <span>Únete al Grupo</span>
-            <i class="fa-solid fa-users text-sm text-purple-400"></i>
-          </h3>
-          <!-- Amber warning banner to clarify it is just a preview -->
-          <div class="bg-amber-500/10 text-amber-400 border border-amber-500/25 rounded-xl p-2.5 text-[11px] font-medium leading-relaxed mt-3">
-            <i class="fa-solid fa-circle-exclamation mr-1 text-amber-400"></i>
-            Las imágenes de abajo son **ejemplos visuales** de lo que verás en Google. No intentes pulsar en ellas. Para unirte, usa el botón morado de abajo: <strong>"Unirse al Grupo"</strong>.
-          </div>
-
-          <!-- Dual Screenshot Step-by-Step Guide -->
-          <div class="mt-4 space-y-6">
-            
-            <!-- Sub-step A -->
-            <div class="space-y-2">
-              <div class="flex items-center gap-2">
-                <span class="w-5 h-5 bg-purple-600/20 text-purple-400 border border-purple-500/20 rounded-full flex items-center justify-center font-bold text-[10px]">A</span>
-                <span class="text-xs font-bold text-white">Al abrir la página, toca "Unirse al grupo" en el banner:</span>
-              </div>
-              
-              <div class="relative rounded-xl overflow-hidden border border-white/10 bg-white cursor-not-allowed select-none max-w-sm mx-auto group">
-                <div class="absolute top-2 left-2 bg-amber-500 text-slate-950 text-[7px] font-black px-1.5 py-0.5 rounded shadow z-10 uppercase tracking-wider">
-                  Ejemplo Visual A
-                </div>
-                <img src="google_group_step1.png" class="w-full object-cover opacity-90" alt="Paso A">
-                <!-- Avatar cover -->
-                <div class="absolute top-[1.5%] right-[2%] w-[7%] h-[8%] bg-slate-900/90 rounded-full border border-white/10 z-10"></div>
-                <!-- Bouncing red arrow pointing to the "Unirse al grupo" button next to "Dopalingo Testers" -->
-                <div class="absolute top-[21%] left-[45%] text-red-500 animate-bounce flex flex-col items-center">
-                  <i class="fa-solid fa-arrow-down text-sm drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"></i>
-                  <span class="text-[7px] bg-red-600 text-white font-black px-1.5 py-0.5 rounded shadow mt-0.5 whitespace-nowrap">1. ¡Toca aquí!</span>
-                </div>
-              </div>
+      <!-- Step 1 Card (Wide split layout) -->
+      <div class="glass p-8 md:p-10 rounded-[32px] glass-hover transition-all duration-300 flex flex-col lg:flex-row gap-8 lg:gap-12 items-stretch">
+        <!-- Left: Instructions -->
+        <div class="lg:w-5/12 flex flex-col justify-between space-y-5">
+          <div class="space-y-4">
+            <div class="w-12 h-12 bg-purple-600/10 border border-purple-500/20 text-purple-400 rounded-2xl flex items-center justify-center font-black text-xl">
+              1
             </div>
-
-            <!-- Sub-step B -->
-            <div class="space-y-2">
-              <div class="flex items-center gap-2">
-                <span class="w-5 h-5 bg-purple-600/20 text-purple-400 border border-purple-500/20 rounded-full flex items-center justify-center font-bold text-[10px]">B</span>
-                <span class="text-xs font-bold text-white">Confirma en la pantalla blanca (abajo a la derecha):</span>
-              </div>
-
-              <div class="relative rounded-xl overflow-hidden border border-white/10 bg-white cursor-not-allowed select-none max-w-sm mx-auto group">
-                <div class="absolute top-2 left-2 bg-amber-500 text-slate-950 text-[7px] font-black px-1.5 py-0.5 rounded shadow z-10 uppercase tracking-wider">
-                  Ejemplo Visual B
-                </div>
-                <img src="google_group_step2.png" class="w-full object-cover opacity-90" alt="Paso B">
-                <!-- Hide display name -->
-                <div class="absolute top-[23%] left-[7%] w-[27%] h-[14%] bg-slate-100/95 border border-slate-300 rounded flex items-center justify-center text-[7px] text-slate-500 font-bold z-10">
-                  🔒 Info Oculta
-                </div>
-                <!-- Hide avatar -->
-                <div class="absolute top-[1.5%] right-[2%] w-[7%] h-[8%] bg-slate-100/95 rounded-full border border-slate-300 z-10"></div>
-                <!-- Bouncing red arrow pointing to the bottom-right Join button -->
-                <div class="absolute bottom-[9%] right-[1%] text-red-500 animate-bounce flex flex-col items-center">
-                  <i class="fa-solid fa-arrow-down text-sm md:text-base drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"></i>
-                  <span class="text-[6px] md:text-[8px] bg-red-600 text-white font-black px-1.5 py-0.5 rounded shadow mt-0.5 whitespace-nowrap">2. ¡Toca aquí para unirte!</span>
-                </div>
-              </div>
+            <h3 class="text-2xl font-black text-white flex items-center gap-2">
+              <span>Paso 1: Únete al Grupo</span>
+              <i class="fa-solid fa-users text-sm text-purple-400"></i>
+            </h3>
+            <p class="text-gray-400 text-base leading-relaxed">
+              Únete a nuestro grupo oficial de Google. Debes hacerlo usando <strong class="text-purple-300">la misma cuenta de correo</strong> que usas en la tienda Google Play.
+            </p>
+            <!-- Amber warning banner to clarify it is just a preview -->
+            <div class="bg-amber-500/10 text-amber-400 border border-amber-500/25 rounded-2xl p-4 text-xs font-medium leading-relaxed">
+              <i class="fa-solid fa-circle-exclamation mr-1.5 text-amber-400"></i>
+              Las capturas de la derecha son **ejemplos ilustrativos**. No intentes pulsar sobre ellas. Para unirte, usa el botón morado:
             </div>
-
           </div>
-
-          <div class="p-3 bg-slate-950/40 rounded-xl border border-white/5 text-xs text-gray-500 mt-4">
-            <i class="fa-solid fa-circle-info mr-1.5 text-purple-400"></i>
-            Sin unirse a este grupo, Google Play mostrará un error de "App no encontrada".
+          
+          <div class="space-y-4">
+            <a id="group-link" href="https://groups.google.com/g/dopalingo-testers" target="_blank" class="w-full py-4 bg-purple-600 hover:bg-purple-700 text-white font-extrabold rounded-2xl text-center text-sm transition-all duration-300 flex items-center justify-center gap-2 hover:scale-[1.01] active:scale-[0.99] shadow-lg shadow-purple-500/10">
+              <span>Unirse al Grupo</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+            </a>
+            <div class="p-3 bg-slate-950/40 rounded-xl border border-white/5 text-xs text-gray-500">
+              <i class="fa-solid fa-circle-info mr-1.5 text-purple-400"></i>
+              Sin unirse a este grupo, Google Play mostrará un error de "App no encontrada".
+            </div>
           </div>
         </div>
-        <div class="pt-4">
-          <a id="group-link" href="https://groups.google.com/g/dopalingo-testers" target="_blank" class="w-full py-3 bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-xl text-center text-sm transition-all duration-300 flex items-center justify-center gap-2">
-            <span>Unirse al Grupo</span>
-            <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-          </a>
+
+        <!-- Right: Real Screenshots Side-by-Side -->
+        <div class="lg:w-7/12 w-full grid grid-cols-1 sm:grid-cols-2 gap-6 bg-slate-950/30 p-4 md:p-6 rounded-[24px] border border-white/5">
+          <!-- Sub-step A -->
+          <div class="space-y-3 flex flex-col justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 bg-purple-600/25 text-purple-400 border border-purple-500/20 rounded-full flex items-center justify-center font-bold text-[10px]">A</span>
+              <span class="text-xs font-bold text-gray-300">Toca "Unirse al grupo" en el banner:</span>
+            </div>
+            
+            <div class="relative rounded-xl overflow-hidden border border-white/10 bg-white cursor-not-allowed select-none group w-full">
+              <div class="absolute top-2 left-2 bg-amber-500 text-slate-950 text-[7px] font-black px-1.5 py-0.5 rounded shadow z-10 uppercase tracking-wider">
+                Ejemplo Visual A
+              </div>
+              <img src="google_group_step1.png" class="w-full object-cover opacity-90" alt="Paso A">
+              <div class="absolute top-[1.5%] right-[2%] w-[7%] h-[8%] bg-slate-900/90 rounded-full border border-white/10 z-10"></div>
+              
+              <!-- Bouncing red arrow pointing to the "Unirse al grupo" button next to "Dopalingo Testers" -->
+              <div class="absolute top-[21%] left-[45%] text-red-500 animate-bounce flex flex-col items-center">
+                <i class="fa-solid fa-arrow-down text-sm drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"></i>
+                <span class="text-[7px] bg-red-600 text-white font-black px-1.5 py-0.5 rounded shadow mt-0.5 whitespace-nowrap">1. ¡Toca aquí primero!</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub-step B -->
+          <div class="space-y-3 flex flex-col justify-between">
+            <div class="flex items-center gap-2">
+              <span class="w-5 h-5 bg-purple-600/25 text-purple-400 border border-purple-500/20 rounded-full flex items-center justify-center font-bold text-[10px]">B</span>
+              <span class="text-xs font-bold text-gray-300">Confirma en la pantalla blanca:</span>
+            </div>
+
+            <div class="relative rounded-xl overflow-hidden border border-white/10 bg-white cursor-not-allowed select-none group w-full">
+              <div class="absolute top-2 left-2 bg-amber-500 text-slate-950 text-[7px] font-black px-1.5 py-0.5 rounded shadow z-10 uppercase tracking-wider">
+                Ejemplo Visual B
+              </div>
+              <img src="google_group_step2.png" class="w-full object-cover opacity-90" alt="Paso B">
+              <!-- Hide display name -->
+              <div class="absolute top-[23%] left-[7%] w-[27%] h-[14%] bg-slate-100/95 border border-slate-300 rounded flex items-center justify-center text-[7px] text-slate-500 font-bold z-10">
+                🔒 Info Oculta
+              </div>
+              <div class="absolute top-[1.5%] right-[2%] w-[7%] h-[8%] bg-slate-100/95 rounded-full border border-slate-300 z-10"></div>
+              
+              <!-- Bouncing red arrow pointing to the bottom-right Join button -->
+              <div class="absolute bottom-[9%] right-[1%] text-red-500 animate-bounce flex flex-col items-center">
+                <i class="fa-solid fa-arrow-down text-sm drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"></i>
+                <span class="text-[7px] bg-red-600 text-white font-black px-1.5 py-0.5 rounded shadow mt-0.5 whitespace-nowrap">2. ¡Confirma aquí!</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- Step 2 Card -->
-      <div class="glass p-8 rounded-3xl space-y-5 glass-hover transition-all duration-300 flex flex-col justify-between">
-        <div class="space-y-4">
+      <!-- Step 2 Card (Wide Flex Layout) -->
+      <div class="glass p-8 md:p-10 rounded-[32px] glass-hover transition-all duration-300 flex flex-col lg:flex-row gap-8 lg:gap-12 items-center justify-between">
+        <div class="lg:w-7/12 space-y-4">
           <div class="w-12 h-12 bg-pink-600/10 border border-pink-500/20 text-pink-400 rounded-2xl flex items-center justify-center font-black text-xl">
             2
           </div>
-          <h3 class="text-xl font-bold text-white flex items-center gap-2">
-            <span>Acepta el Enlace</span>
+          <h3 class="text-2xl font-black text-white flex items-center gap-2">
+            <span>Paso 2: Acepta el Enlace de Invitación</span>
             <i class="fa-solid fa-link text-sm text-pink-400"></i>
           </h3>
-          <p class="text-gray-400 text-sm leading-relaxed">
-            Una vez te unas al grupo, haz clic en el enlace de invitación de Google Play para convertirte en tester oficial.
+          <p class="text-gray-400 text-base leading-relaxed">
+            Una vez te unas al grupo, haz clic en el enlace de invitación de Google Play para convertirte en tester oficial. Este paso valida tu cuenta en los servidores de Google para que te permita realizar la descarga.
           </p>
-          <div class="p-3 bg-slate-950/40 rounded-xl border border-white/5 text-xs text-gray-500">
-            <i class="fa-solid fa-circle-info mr-1.5 text-pink-400"></i>
-            Este paso valida tu cuenta en los servidores de Google para que te permita descargar.
-          </div>
         </div>
-        <div class="pt-4 space-y-2">
-          <a id="testing-link" href="https://play.google.com/apps/testing/com.dopalingo.focus" target="_blank" class="w-full py-3 bg-pink-600 hover:bg-pink-700 text-white font-bold rounded-xl text-center text-sm transition-all duration-300 flex items-center justify-center gap-2">
-            <span>Aceptar en la Web</span>
-            <i class="fa-solid fa-globe text-xs"></i>
+        <div class="lg:w-4/12 w-full space-y-4 flex flex-col justify-end">
+          <a id="testing-link" href="https://play.google.com/apps/testing/com.dopalingo.focus" target="_blank" class="w-full py-4 bg-pink-600 hover:bg-pink-700 text-white font-extrabold rounded-2xl text-center text-sm transition-all duration-300 flex items-center justify-center gap-2 hover:scale-[1.01] active:scale-[0.99] shadow-lg shadow-pink-500/10">
+            <span>Aceptar Invitación Web</span>
+            <i class="fa-solid fa-globe"></i>
           </a>
+          <div class="p-3 bg-slate-950/40 rounded-xl border border-white/5 text-[11px] text-gray-500 text-center">
+            <i class="fa-solid fa-circle-info mr-1 text-pink-400"></i> Debe ser el mismo correo de tu Play Store.
+          </div>
         </div>
       </div>
 
-      <!-- Step 3 Card -->
-      <div class="glass p-8 rounded-3xl space-y-5 glass-hover transition-all duration-300 flex flex-col justify-between">
-        <div class="space-y-4">
+      <!-- Step 3 Card (Wide Flex Layout) -->
+      <div class="glass p-8 md:p-10 rounded-[32px] glass-hover transition-all duration-300 flex flex-col lg:flex-row gap-8 lg:gap-12 items-center justify-between">
+        <div class="lg:w-7/12 space-y-4">
           <div class="w-12 h-12 bg-indigo-600/10 border border-indigo-500/20 text-indigo-400 rounded-2xl flex items-center justify-center font-black text-xl">
             3
           </div>
-          <h3 class="text-xl font-bold text-white flex items-center gap-2">
-            <span>Descarga la App</span>
+          <h3 class="text-2xl font-black text-white flex items-center gap-2">
+            <span>Paso 3: Descarga la App</span>
             <i class="fa-solid fa-download text-sm text-indigo-400"></i>
           </h3>
-          <p class="text-gray-400 text-sm leading-relaxed">
-            ¡Todo listo! Toca el botón de descarga para ir a Google Play Store y bajar DopaLingo de forma segura a tu celular.
+          <p class="text-gray-400 text-base leading-relaxed">
+            ¡Todo listo! Toca el botón de descarga para ir a Google Play Store y bajar DopaLingo de forma segura a tu celular. Recibirás actualizaciones automáticas directamente desde la tienda oficial.
           </p>
-          <div class="p-3 bg-slate-950/40 rounded-xl border border-white/5 text-xs text-gray-500">
-            <i class="fa-solid fa-circle-info mr-1.5 text-indigo-400"></i>
-            La app recibirá actualizaciones automáticas directamente desde Google Play.
-          </div>
         </div>
-        <div class="pt-4">
-          <a id="download-link" href="https://play.google.com/store/apps/details?id=com.dopalingo.focus" target="_blank" class="w-full py-3 bg-gradient-to-r from-purple-600 to-indigo-600 hover:opacity-90 text-white font-bold rounded-xl text-center text-sm transition-all duration-300 flex items-center justify-center gap-2">
+        <div class="lg:w-4/12 w-full">
+          <a id="download-link" href="https://play.google.com/store/apps/details?id=com.dopalingo.focus" target="_blank" class="w-full py-4 bg-gradient-to-r from-purple-600 to-indigo-600 hover:opacity-90 text-white font-extrabold rounded-2xl text-center text-sm transition-all duration-300 flex items-center justify-center gap-2 hover:scale-[1.01] active:scale-[0.99] shadow-lg shadow-indigo-500/10">
             <span>Descargar en Google Play</span>
             <i class="fa-brands fa-google-play"></i>
           </a>
