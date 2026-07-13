@@ -287,6 +287,27 @@
           <p class="text-gray-400 text-sm leading-relaxed">
             Únete a nuestro grupo oficial de Google. Debes hacerlo usando <strong class="text-purple-300">la misma cuenta de correo</strong> que usas en la tienda Google Play.
           </p>
+          
+          <!-- Google Groups interface mockup with a bouncing arrow helper -->
+          <div class="p-3.5 bg-slate-900/60 rounded-2xl border border-white/5 space-y-2.5">
+            <div class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">¿Qué verás al abrir el enlace?</div>
+            <div class="relative bg-slate-950 p-3 rounded-xl border border-white/5 flex items-center justify-between overflow-hidden">
+              <div class="flex items-center gap-2 min-w-0">
+                <i class="fa-solid fa-users text-purple-400 text-sm flex-shrink-0"></i>
+                <span class="text-[11px] font-bold text-white truncate">Dopalingo Testers</span>
+              </div>
+              <div class="relative flex-shrink-0">
+                <span class="px-2.5 py-1 bg-white text-[9px] text-slate-900 font-extrabold rounded-md shadow border border-slate-200">Unirse al grupo</span>
+                <!-- Bouncing arrow pointing to the Join Group button -->
+                <div class="absolute -bottom-8 -left-2 text-purple-400 animate-bounce flex flex-col items-center z-10">
+                  <i class="fa-solid fa-arrow-up text-xs"></i>
+                  <span class="text-[8px] bg-purple-600 text-white font-black px-1.5 py-0.5 rounded shadow whitespace-nowrap mt-0.5">¡Toca aquí!</span>
+                </div>
+              </div>
+            </div>
+            <div class="h-5"></div> <!-- Spacer for the bounce animation -->
+          </div>
+
           <div class="p-3 bg-slate-950/40 rounded-xl border border-white/5 text-xs text-gray-500">
             <i class="fa-solid fa-circle-info mr-1.5 text-purple-400"></i>
             Sin unirse a este grupo, Google Play mostrará un error de "App no encontrada".
