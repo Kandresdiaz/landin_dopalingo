@@ -287,72 +287,27 @@
           <p class="text-gray-400 text-sm leading-relaxed">
             Únete a nuestro grupo oficial de Google. Debes hacerlo usando <strong class="text-purple-300">la misma cuenta de correo</strong> que usas en la tienda Google Play.
           </p>
-          
-          <!-- Interactive Multi-step Tutorial for Step 1 -->
-          <div class="p-3.5 bg-slate-900/60 rounded-2xl border border-white/5 space-y-3">
-            <div class="flex items-center justify-between">
-              <span class="text-[10px] text-gray-500 font-bold uppercase tracking-wider">Paso a paso en Google Groups</span>
-              <!-- Tab Switchers -->
-              <div class="flex bg-slate-950 p-0.5 rounded-lg border border-white/5">
-                <button type="button" onclick="switchStep1Tab('a')" id="step1-tab-a-btn" class="px-2.5 py-1 text-[9px] font-bold rounded-md bg-purple-600 text-white transition">Paso A</button>
-                <button type="button" onclick="switchStep1Tab('b')" id="step1-tab-b-btn" class="px-2.5 py-1 text-[9px] font-bold rounded-md text-gray-400 hover:text-white transition">Paso B</button>
-              </div>
+
+          <!-- Real Screenshot Container with CSS covers and pointers -->
+          <div class="relative rounded-2xl overflow-hidden border border-white/15 bg-slate-950 shadow-xl mt-3 select-none">
+            <img src="google_group_screenshot.png" class="w-full object-cover opacity-90" alt="Google Groups Join Screen">
+            
+            <!-- Hide personal display name (n8nkevin) -->
+            <div class="absolute top-[25%] left-[7%] w-[25%] h-[12%] bg-slate-950/80 backdrop-blur-md border border-white/10 rounded flex items-center justify-center text-[7px] md:text-[9px] text-purple-300 font-bold">
+              🔒 Info Oculta
             </div>
 
-            <!-- TAB A: Solicitar unirse -->
-            <div id="step1-tab-a" class="space-y-2">
-              <div class="text-[10px] text-gray-400">1. Al abrir la página, toca el botón azul de arriba:</div>
-              <div class="relative bg-slate-950 p-3 rounded-xl border border-white/5 flex items-center justify-between overflow-hidden">
-                <div class="flex items-center gap-2 min-w-0">
-                  <i class="fa-solid fa-users text-purple-400 text-sm flex-shrink-0"></i>
-                  <span class="text-[11px] font-bold text-white truncate">Dopalingo Testers</span>
-                </div>
-                <div class="relative flex-shrink-0">
-                  <span class="px-2.5 py-1 bg-white text-[9px] text-slate-900 font-extrabold rounded-md shadow border border-slate-200">Unirse al grupo</span>
-                  <!-- Bouncing arrow pointing to the Join Group button -->
-                  <div class="absolute -bottom-8 -left-2 text-purple-400 animate-bounce flex flex-col items-center z-10">
-                    <i class="fa-solid fa-arrow-up text-xs"></i>
-                    <span class="text-[8px] bg-purple-600 text-white font-black px-1.5 py-0.5 rounded shadow whitespace-nowrap mt-0.5">1. ¡Toca aquí!</span>
-                  </div>
-                </div>
-              </div>
-              <div class="h-5"></div>
-            </div>
+            <!-- Hide personal user avatar top right -->
+            <div class="absolute top-[1.5%] right-[2%] w-[7%] h-[8%] bg-slate-950/90 backdrop-blur-sm rounded-full border border-white/10"></div>
 
-            <!-- TAB B: Confirmar formulario -->
-            <div id="step1-tab-b" class="hidden space-y-2">
-              <div class="text-[10px] text-gray-400">2. Se abrirá este recuadro. Confirma abajo a la derecha:</div>
-              <div class="bg-slate-950 p-3 rounded-xl border border-white/5 space-y-3 relative text-[9px]">
-                <div class="text-center font-bold text-white border-b border-white/5 pb-1">Unirse a Dopalingo Testers</div>
-                
-                <div class="space-y-1.5 opacity-60">
-                  <div class="flex justify-between items-center">
-                    <span>Nombre para mostrar:</span>
-                    <span class="px-1.5 py-0.5 bg-slate-900 rounded border border-white/5 font-mono text-[8px] text-purple-300">[Tu nombre oculto]</span>
-                  </div>
-                  <div class="flex items-center gap-1.5">
-                    <i class="fa-regular fa-square-check text-purple-400"></i>
-                    <span>Vincular perfil de mi cuenta de Google</span>
-                  </div>
-                </div>
-
-                <div class="flex justify-end gap-2 pt-1 border-t border-white/5">
-                  <span class="text-gray-500 font-semibold cursor-default text-[8px] py-1">Cancelar</span>
-                  <div class="relative">
-                    <span class="px-2.5 py-1 bg-blue-600 text-[8px] font-extrabold text-white rounded-md shadow">Unirse al grupo</span>
-                    <!-- Bouncing arrow pointing to the final submit link -->
-                    <div class="absolute -bottom-8 -left-2 text-purple-400 animate-bounce flex flex-col items-center z-10">
-                      <i class="fa-solid fa-arrow-up text-xs"></i>
-                      <span class="text-[8px] bg-purple-600 text-white font-black px-1.5 py-0.5 rounded shadow whitespace-nowrap mt-0.5">2. ¡Confirma aquí!</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="h-5"></div>
+            <!-- Red Bouncing Arrow pointing to bottom-right "Unirse al grupo" link -->
+            <div class="absolute bottom-[9%] right-[1%] text-red-500 animate-bounce flex flex-col items-center">
+              <i class="fa-solid fa-arrow-down text-sm md:text-base drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"></i>
+              <span class="text-[6px] md:text-[8px] bg-red-600 text-white font-black px-1.5 py-0.5 rounded shadow mt-0.5 whitespace-nowrap">¡Toca aquí para unirte!</span>
             </div>
           </div>
 
-          <div class="p-3 bg-slate-950/40 rounded-xl border border-white/5 text-xs text-gray-500">
+          <div class="p-3 bg-slate-950/40 rounded-xl border border-white/5 text-xs text-gray-500 mt-4">
             <i class="fa-solid fa-circle-info mr-1.5 text-purple-400"></i>
             Sin unirse a este grupo, Google Play mostrará un error de "App no encontrada".
           </div>
