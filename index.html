@@ -213,6 +213,18 @@
             <p class="text-[10px] text-gray-500 animate-pulse">Redireccionando a tu red social...</p>
           </div>
 
+          <!-- STATE 4: Timeout Screen -->
+          <div id="sim-timeout" class="hidden flex flex-col h-full items-center justify-center text-center space-y-4">
+            <div class="w-14 h-14 bg-red-500/20 text-red-400 rounded-full flex items-center justify-center border border-red-500/30">
+              <i class="fa-solid fa-clock-rotate-left text-2xl"></i>
+            </div>
+            <h3 class="text-base font-bold text-white">¡Tiempo Agotado!</h3>
+            <p class="text-[11px] text-gray-400 px-4 leading-relaxed">No lograste ordenar la frase a tiempo. ¡Prueba otra vez!</p>
+            <button onclick="resetSimulator()" class="px-5 py-2 bg-slate-800 hover:bg-slate-700 text-xs text-white rounded-xl border border-white/5 font-semibold transition active:scale-95">
+              Intentar de nuevo
+            </button>
+          </div>
+
           <!-- STATE 3: Simulated Social Media Access -->
           <div id="sim-social" class="hidden flex flex-col h-full justify-between text-white">
             <!-- Simulated Instagram App Feed -->
@@ -414,6 +426,7 @@
     const challengeScreen = document.getElementById('sim-challenge');
     const successScreen = document.getElementById('sim-success');
     const socialScreen = document.getElementById('sim-social');
+    const timeoutScreen = document.getElementById('sim-timeout');
 
     function startTimer() {
       timerValue = 15;
@@ -424,9 +437,8 @@
         timerElement.textContent = timerValue + "s";
         if (timerValue <= 0) {
           clearInterval(timerInterval);
-          alert("¡Se acabó el tiempo! Vuelve a intentarlo.");
-          clearWords();
-          startTimer();
+          challengeScreen.classList.add('hidden');
+          timeoutScreen.classList.remove('hidden');
         }
       }, 1000);
     }
@@ -488,6 +500,7 @@
 
     function resetSimulator() {
       socialScreen.classList.add('hidden');
+      timeoutScreen.classList.add('hidden');
       challengeScreen.classList.remove('hidden');
       clearWords();
       startTimer();
