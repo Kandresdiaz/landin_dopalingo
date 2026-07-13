@@ -287,32 +287,60 @@
           <!-- Amber warning banner to clarify it is just a preview -->
           <div class="bg-amber-500/10 text-amber-400 border border-amber-500/25 rounded-xl p-2.5 text-[11px] font-medium leading-relaxed mt-3">
             <i class="fa-solid fa-circle-exclamation mr-1 text-amber-400"></i>
-            Esta es una <strong>imagen de ejemplo</strong> de lo que verás en Google. Para unirte, pulsa el botón morado de abajo: <strong>"Unirse al Grupo"</strong>.
+            Las imágenes de abajo son **ejemplos visuales** de lo que verás en Google. No intentes pulsar en ellas. Para unirte, usa el botón morado de abajo: <strong>"Unirse al Grupo"</strong>.
           </div>
 
-          <!-- Real Screenshot Container with CSS covers and pointers -->
-          <div class="relative rounded-2xl overflow-hidden border border-white/15 bg-slate-950 shadow-xl mt-3 select-none cursor-not-allowed group">
+          <!-- Dual Screenshot Step-by-Step Guide -->
+          <div class="mt-4 space-y-6">
             
-            <!-- Preview label badge -->
-            <div class="absolute top-2 left-2 bg-amber-500 text-slate-950 text-[8px] font-black px-2 py-0.5 rounded shadow z-10 uppercase tracking-wider">
-              Vista Previa de Ejemplo
+            <!-- Sub-step A -->
+            <div class="space-y-2">
+              <div class="flex items-center gap-2">
+                <span class="w-5 h-5 bg-purple-600/20 text-purple-400 border border-purple-500/20 rounded-full flex items-center justify-center font-bold text-[10px]">A</span>
+                <span class="text-xs font-bold text-white">Al abrir la página, toca "Unirse al grupo" en el banner:</span>
+              </div>
+              
+              <div class="relative rounded-xl overflow-hidden border border-white/10 bg-white cursor-not-allowed select-none max-w-sm mx-auto group">
+                <div class="absolute top-2 left-2 bg-amber-500 text-slate-950 text-[7px] font-black px-1.5 py-0.5 rounded shadow z-10 uppercase tracking-wider">
+                  Ejemplo Visual A
+                </div>
+                <img src="google_group_step1.png" class="w-full object-cover opacity-90" alt="Paso A">
+                <!-- Avatar cover -->
+                <div class="absolute top-[1.5%] right-[2%] w-[7%] h-[8%] bg-slate-900/90 rounded-full border border-white/10 z-10"></div>
+                <!-- Bouncing red arrow pointing to the "Unirse al grupo" button next to "Dopalingo Testers" -->
+                <div class="absolute top-[21%] left-[45%] text-red-500 animate-bounce flex flex-col items-center">
+                  <i class="fa-solid fa-arrow-down text-sm drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"></i>
+                  <span class="text-[7px] bg-red-600 text-white font-black px-1.5 py-0.5 rounded shadow mt-0.5 whitespace-nowrap">1. ¡Toca aquí!</span>
+                </div>
+              </div>
             </div>
 
-            <img src="google_group_screenshot.png" class="w-full object-cover opacity-80" alt="Google Groups Join Screen">
-            
-            <!-- Hide personal display name (n8nkevin) -->
-            <div class="absolute top-[25%] left-[7%] w-[25%] h-[12%] bg-slate-950/80 backdrop-blur-md border border-white/10 rounded flex items-center justify-center text-[7px] md:text-[9px] text-purple-300 font-bold">
-              🔒 Info Oculta
+            <!-- Sub-step B -->
+            <div class="space-y-2">
+              <div class="flex items-center gap-2">
+                <span class="w-5 h-5 bg-purple-600/20 text-purple-400 border border-purple-500/20 rounded-full flex items-center justify-center font-bold text-[10px]">B</span>
+                <span class="text-xs font-bold text-white">Confirma en la pantalla blanca (abajo a la derecha):</span>
+              </div>
+
+              <div class="relative rounded-xl overflow-hidden border border-white/10 bg-white cursor-not-allowed select-none max-w-sm mx-auto group">
+                <div class="absolute top-2 left-2 bg-amber-500 text-slate-950 text-[7px] font-black px-1.5 py-0.5 rounded shadow z-10 uppercase tracking-wider">
+                  Ejemplo Visual B
+                </div>
+                <img src="google_group_step2.png" class="w-full object-cover opacity-90" alt="Paso B">
+                <!-- Hide display name -->
+                <div class="absolute top-[23%] left-[7%] w-[27%] h-[14%] bg-slate-100/95 border border-slate-300 rounded flex items-center justify-center text-[7px] text-slate-500 font-bold z-10">
+                  🔒 Info Oculta
+                </div>
+                <!-- Hide avatar -->
+                <div class="absolute top-[1.5%] right-[2%] w-[7%] h-[8%] bg-slate-100/95 rounded-full border border-slate-300 z-10"></div>
+                <!-- Bouncing red arrow pointing to the bottom-right Join button -->
+                <div class="absolute bottom-[9%] right-[1%] text-red-500 animate-bounce flex flex-col items-center">
+                  <i class="fa-solid fa-arrow-down text-sm md:text-base drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"></i>
+                  <span class="text-[6px] md:text-[8px] bg-red-600 text-white font-black px-1.5 py-0.5 rounded shadow mt-0.5 whitespace-nowrap">2. ¡Toca aquí para unirte!</span>
+                </div>
+              </div>
             </div>
 
-            <!-- Hide personal user avatar top right -->
-            <div class="absolute top-[1.5%] right-[2%] w-[7%] h-[8%] bg-slate-950/90 backdrop-blur-sm rounded-full border border-white/10"></div>
-
-            <!-- Red Bouncing Arrow pointing to bottom-right "Unirse al grupo" link -->
-            <div class="absolute bottom-[9%] right-[1%] text-red-500 animate-bounce flex flex-col items-center">
-              <i class="fa-solid fa-arrow-down text-sm md:text-base drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"></i>
-              <span class="text-[6px] md:text-[8px] bg-red-600 text-white font-black px-1.5 py-0.5 rounded shadow mt-0.5 whitespace-nowrap">¡Toca aquí para unirte!</span>
-            </div>
           </div>
 
           <div class="p-3 bg-slate-950/40 rounded-xl border border-white/5 text-xs text-gray-500 mt-4">
